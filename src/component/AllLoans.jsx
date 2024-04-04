@@ -76,10 +76,11 @@ const AllLoans = () => {
                     Frequency: {loan.repaymentFrequency}
                   </p>
                 </div>
-                <div>
+                <div className="flex flex-col">
                   <p className="font-anta">
-                    Status:
-                    <span
+                    Status: 
+                  </p>
+                  <span
                       className={`font-bold ${
                         loan.status === "PENDING"
                           ? "text-red-500"
@@ -92,7 +93,6 @@ const AllLoans = () => {
                     >
                      {" "} {loan.status}
                     </span>
-                  </p>
                 </div>
               </div>
               {selectedLoan && selectedLoan.id === loan.id && (
