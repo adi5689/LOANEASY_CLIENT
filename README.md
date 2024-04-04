@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Loan Management System is a comprehensive web application designed to streamline the process of applying for loans, managing loan repayments, and administering loan applications. Built with React, it leverages Vite for rapid development and build times, ensuring a fast and efficient workflow. The application is architected with a modular approach, utilizing hooks for state management and context for user authentication and authorization.
+The LOANEASY is a comprehensive web application designed to streamline the process of applying for loans, managing loan repayments, and administering loan applications. Built with React, it leverages Vite for rapid development and build times, ensuring a fast and efficient workflow. The application is architected with a modular approach, utilizing hooks for state management and context for user authentication and authorization.
 
 ## Features
 
