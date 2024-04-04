@@ -27,7 +27,7 @@ const Auth = () => {
         navigate("/");
       } else {
         await handleSignup(username, email, password);
-        navigate("/" ); 
+        setIsLogin(true);
       }
     } catch (err) {
       console.error(err);

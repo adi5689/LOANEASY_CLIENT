@@ -76,10 +76,11 @@ const AllLoans = () => {
                     Frequency: {loan.repaymentFrequency}
                   </p>
                 </div>
-                <div>
+                <div className="flex flex-col pr-5">
                   <p className="font-anta">
                     Status:
-                    <span
+                  </p>
+                  <span
                       className={`font-bold ${
                         loan.status === "PENDING"
                           ? "text-red-500"
@@ -92,7 +93,6 @@ const AllLoans = () => {
                     >
                      {" "} {loan.status}
                     </span>
-                  </p>
                 </div>
               </div>
               {selectedLoan && selectedLoan.id === loan.id && (
@@ -107,10 +107,13 @@ const AllLoans = () => {
                       <p className="font-anta">
                         Amount: &#8377;{repayment.amount}
                       </p>
-                      <p className="font-anta">
-                        Due Date: {formatDate(repayment.dueDate)}
-                      </p>
-                      {loan.status === "APPROVED" && (
+
+                      {loan.status !== "PAID" && (
+                          <p className="font-anta">
+                          Due Date: {formatDate(repayment.dueDate)}
+                        </p>
+                      )}
+                      {loan.status !== "PENDING" && (
                         <p className="font-anta">
                           Status:
                           <span

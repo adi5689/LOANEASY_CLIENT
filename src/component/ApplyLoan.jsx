@@ -12,13 +12,11 @@ const ApplyLoan = () => {
     e.preventDefault();
     try {
       await createLoan(amount, term, repaymentFrequency);
-      // Handling success, e.g., showing a success message or redirect
       alert('Loan application submitted successfully!');
       setAmount('');
       setTerm('');
       setRepaymentFrequency('');
     } catch (err) {
-      // Handling error, e.g., show an error message
       alert('Failed to submit loan application. Please try again.');
     }
  };
