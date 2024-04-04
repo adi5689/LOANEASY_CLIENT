@@ -39,8 +39,7 @@ export const AuthProvider = ({children}) => {
     const handleSignup = async (name, email, password) => {
         try {
             const user = await signup(name, email, password);
-            setCurrentUser(user);
-            setSignupCompleted(true); 
+            setCurrentUser(user); 
         } catch (err) {
             throw err; 
         }
