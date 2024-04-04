@@ -112,7 +112,7 @@ const AllLoans = () => {
                           Due Date: {formatDate(repayment.dueDate)}
                         </p>
                       )}
-                      {Loan.status !== "PENDING"  && (
+                      {loan.status !== "PENDING"  && (
                         <p className="font-anta">
                           Status:
                           <span
