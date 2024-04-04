@@ -13,6 +13,15 @@ The Loan Management System is a comprehensive web application designed to stream
 - **Responsive Design**: The application is designed to be responsive, providing a seamless experience across devices.
 - **Error Handling**: Robust error handling to ensure a smooth user experience.
 
+
+## Tech Stack
+- **Frontend**: React, Vite, Axios, TailwindCSS
+- **Backend**: Node.js, Express.js (Assumed based on the API calls)
+- **Database**: MongoDB (Assumed based on common practices)
+- **Authentication**: JWT (JSON Web Tokens)
+- **State Management**: React Context API, Hooks
+- **Styling**: TailwindCSS
+
 ## Installation
 
 1. **Clone the Repository**:
