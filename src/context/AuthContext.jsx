@@ -26,7 +26,6 @@ export const AuthProvider = ({children}) => {
     const [currentUser, setCurrentUser] = useState(null);
     const [activeTab, setActiveTab] = useState('applyLoan');
     const navigate = useNavigate(); 
-    const [loadingUser, setLoadingUser] = useState(true); // New loading state
 
     const handleLogin = async (email, password) => {
         const user = await login(email, password);
@@ -64,11 +63,10 @@ export const AuthProvider = ({children}) => {
                     localStorage.removeItem('token');
                     setCurrentUser(null);
                 }
-                setLoadingUser(false); // Set loading to false after setting the user
             });
         } else {
             setCurrentUser(null);
-            setLoadingUser(false); // Also set loading to false if there's no token
+            
         }
     }, []);
     
