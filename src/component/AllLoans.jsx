@@ -107,12 +107,12 @@ const AllLoans = () => {
                       <p className="font-anta">
                         Amount: &#8377;{repayment.amount}
                       </p>
-                      {loan.status === "PENDING" && (
+                      {loan.status !== "PAID" && (
                           <p className="font-anta">
                           Due Date: {formatDate(repayment.dueDate)}
                         </p>
                       )}
-                      {loan.status === "APPROVED" && loan.status === "PAID"  && (
+                      {Loan.status !== "PENDING"  && (
                         <p className="font-anta">
                           Status:
                           <span
