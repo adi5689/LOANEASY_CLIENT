@@ -77,7 +77,7 @@ const AllLoans = () => {
                   </p>
                 </div>                
 
-                <div className="flex flex-col">
+                <div className="flex flex-col text-right">
                   <p className="font-anta">
                     Status: 
 
